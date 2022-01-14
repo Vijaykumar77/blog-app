@@ -1,0 +1,29 @@
+.footer {
+    background-color:#5290dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  
+  
+  }
+  .name {
+    font-size: 20px;
+    padding: 20px 30px 15px;
+    color: white;
+  }
+  
+  a {
+    color:white;
+  }
+  
+  .iconContainer {
+    width: 50%;
+    height: 50px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+  }
