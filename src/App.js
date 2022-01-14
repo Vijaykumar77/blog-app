@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import NavBlog from './Component/NavBlog';
 import NewsContent from './Component/NewsContent/NewsContent'
-import apikey from './Data/Config';
 import Footer from "./Component/Footer/Footer"
 
 function App() {
@@ -19,9 +18,9 @@ function App() {
     
 
       const news = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}&pageSize=${loadMore}&category=${category}`
+        `https://saurav.tech/NewsAPI/top-headlines/category/${category}/in.json`
       );
-      // console.log(news);
+      console.log(news);
       setNewsArray(news.data.articles);
       setNewsResults(news.data.totalResults);
     } catch (error) {
